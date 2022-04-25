@@ -1,0 +1,69 @@
+
+table, 
+th,
+td {
+    border:1px solid grey;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+#mytable {
+    color:orange;
+}
+
+.mytable_class {
+    background:rgb(234, 224, 170)
+}
+
+/* If you don't write li, they will still inherit the attribute and cancel their style. */
+/* ul.info {
+    list-style: none;
+} */
+
+/* ul.info li {
+    list-style: none;
+} */
+
+/* ul.info>li {
+    list-style: none;
+} */
+
+
+/* ul.info>li li{
+    list-style: none;
+} */
+
+ul.info>li li:nth-child(2){
+    list-style: none;
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+ol li a[target="_blank"] {
+    color:aqua
+}
+
+ol li a[href="https://google.com"]{
+    color:blue;
+}
+
+ol li a[href*="google"] {
+    color:brown;
+}
+
+ol li a[href^="http"] {
+    color: pink;
+}
+
+ol li a[href$=".com.au"] {
+    background-color: black;
+}
+
+ol li a[href*="google"][href$=".com"] {
+    background-color:blueviolet;
+}
